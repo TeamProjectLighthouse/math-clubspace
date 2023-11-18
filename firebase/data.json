@@ -1,0 +1,192 @@
+[
+    {
+      "studentId": 201401123,
+      "committee": false,
+      "points": 150
+    },
+    {
+      "studentId": 202105017,
+      "committee": false,
+      "points": 120
+    },
+    {
+      "studentId": 201907009,
+      "committee": false,
+      "points": 100
+    },
+    {
+      "studentId": 201401077,
+      "committee": false,
+      "points": 100
+    },
+    {
+      "studentId": 201501017,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 202307008,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 201906004,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 201301090,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 202206016,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 201701087,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 201201065,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 201401123,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 202107011,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 201601121,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 201907009,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 201401012,
+      "committee": true,
+      "points": 10
+    },
+    {
+      "studentId": 201401006,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 202206010,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 201701047,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 201701087,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 201401123,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 202206016,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 201906004,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 201907009,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 202206010,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 202307008,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 201906004,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 202206016,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 201701133,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 201701087,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 201201065,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 201401123,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 202107011,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 201907009,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 201401012,
+      "committee": true,
+      "points": 10
+    },
+    {
+      "studentId": 201807023,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 201401006,
+      "committee": false,
+      "points": 10
+    },
+    {
+      "studentId": 202206010,
+      "committee": false,
+      "points": 10
+    }
+   ]
