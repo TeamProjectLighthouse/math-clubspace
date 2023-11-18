@@ -59,22 +59,28 @@ signOutButton.addEventListener('click', userSignOut);
 const db = getFirestore();
 
 async function fetchFirestoreData() {
-     await fetch('./data.json')
+    let dataJSON;
+     await fetch('./firebase/data.json')
         .then(response => response.json())
         .then(json => {
-            return json;
+            dataJSON = json;
         });
+    return dataJSON;
 }
 
 async function setFirestore() {
-    const students = fetchFirestoreData();
+    const students = await fetchFirestoreData();
         
     for (const i in students) {
         const student = students[i];
         const docRef = doc(db, 'studentId', student.studentId.toString());
 
         await setDoc(docRef, {
-            committee: student.committee
+            class: student.Class,
+            cno: student.CNO,
+            cname: student.CName,
+            ename: student.EName,
+            committee: student.Committee
         }, { merge: true }).then(() => {
             console.log("Document has been added successfully");
         })
@@ -83,7 +89,7 @@ async function setFirestore() {
         })
 
         await updateDoc(docRef, {
-            points: increment(student.points)
+            points: increment(parseInt(student.Points))
         }).then(() => {
             console.log("Points have been updated successfully");
         })
@@ -94,14 +100,16 @@ async function setFirestore() {
 }
 
 async function deleteData() {
-    const students = fetchFirestoreData();
+    const students = await fetchFirestoreData();
 
     for (const i in students) {
         const student = students[i];
         const docRef = doc(db, 'studentId', student.studentId.toString());
-        deleteDoc(docRef);
+        deleteDoc(docRef).then(() => {
+            console.log("Deleted successfully.")
+        });
     }
 }
 
 // deleteData()
-// jsonToFirestore();
+// setFirestore()

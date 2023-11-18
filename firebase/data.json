@@ -1,192 +1,353 @@
 [
-    {
-      "studentId": 201401123,
-      "committee": false,
-      "points": 150
-    },
-    {
-      "studentId": 202105017,
-      "committee": false,
-      "points": 120
-    },
-    {
-      "studentId": 201907009,
-      "committee": false,
-      "points": 100
-    },
-    {
-      "studentId": 201401077,
-      "committee": false,
-      "points": 100
-    },
-    {
-      "studentId": 201501017,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 202307008,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 201906004,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 201301090,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 202206016,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 201701087,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 201201065,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 201401123,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 202107011,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 201601121,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 201907009,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 201401012,
-      "committee": true,
-      "points": 10
-    },
-    {
-      "studentId": 201401006,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 202206010,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 201701047,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 201701087,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 201401123,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 202206016,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 201906004,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 201907009,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 202206010,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 202307008,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 201906004,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 202206016,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 201701133,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 201701087,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 201201065,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 201401123,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 202107011,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 201907009,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 201401012,
-      "committee": true,
-      "points": 10
-    },
-    {
-      "studentId": 201807023,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 201401006,
-      "committee": false,
-      "points": 10
-    },
-    {
-      "studentId": 202206010,
-      "committee": false,
-      "points": 10
-    }
-   ]
+  {
+    "Class": "10B",
+    "CNO": 9,
+    "CName": "劉珈妤",
+    "EName": "LAU Ka Yue",
+    "studentId": 201401111,
+    "Points": 0,
+    "Committee": true
+  },
+  {
+   "Class": "10B",
+   "CNO": 30,
+   "CName": "邱浩哲",
+   "EName": "YAU Ho Chit",
+   "studentId": 201401123,
+   "Points": 150,
+   "Committee": false
+ },
+ {
+   "Class": "7C",
+   "CNO": 17,
+   "CName": "黃安之",
+   "EName": "WONG On Ji",
+   "studentId": 202105017,
+   "Points": 120,
+   "Committee": false
+ },
+ {
+   "Class": "11M",
+   "CNO": 24,
+   "CName": "羅碧城",
+   "EName": "LUO Bicheng",
+   "studentId": 201907009,
+   "Points": 100,
+   "Committee": false
+ },
+ {
+   "Class": "10C",
+   "CNO": 24,
+   "CName": "Max",
+   "EName": "HUANG Max Linshuo",
+   "studentId": 201401077,
+   "Points": 100,
+   "Committee": false
+ },
+ {
+   "Class": "9B",
+   "CNO": 12,
+   "CName": "李語嫣",
+   "EName": "LI Yu Yin Icy",
+   "studentId": 201501017,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "7C",
+   "CNO": 13,
+   "CName": "林禕晨",
+   "EName": "LIN Yichen",
+   "studentId": 202307008,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "10B",
+   "CNO": 14,
+   "CName": "繆雲涵",
+   "EName": "MIAO Yunhan Ivy",
+   "studentId": 201906004,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "11P",
+   "CNO": 8,
+   "CName": "劉祉延",
+   "EName": "LAU Tsz Yin",
+   "studentId": 201301090,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "7C",
+   "CNO": 18,
+   "CName": "余欣澄",
+   "EName": "YU Yan Ching",
+   "studentId": 202206016,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "7C",
+   "CNO": 30,
+   "CName": "隋子軒",
+   "EName": "SUI Tsz Hin",
+   "studentId": 201701087,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "12B",
+   "CNO": 13,
+   "CName": "陳湛琳",
+   "EName": "CHAN Cham Lam",
+   "studentId": 201201065,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "10B",
+   "CNO": 30,
+   "CName": "邱浩哲",
+   "EName": "YAU Ho Chit",
+   "studentId": 201401123,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "9W",
+   "CNO": 11,
+   "CName": "呂盼蔚",
+   "EName": "LUI Pan Wai",
+   "studentId": 202107011,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "8M",
+   "CNO": 24,
+   "CName": "尚嘉諾",
+   "EName": "SHANKER Sharlen",
+   "studentId": 201601121,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "11M",
+   "CNO": 24,
+   "CName": "羅碧城",
+   "EName": "LUO Bicheng",
+   "studentId": 201907009,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "10B",
+   "CNO": 34,
+   "CName": "蔡希愉",
+   "EName": "CHUA Hei Yu",
+   "studentId": 201401012,
+   "Points": 10,
+   "Committee": true
+ },
+ {
+   "Class": "10B",
+   "CNO": 19,
+   "CName": "張家銘",
+   "EName": "CHEUNG Ka Ming",
+   "studentId": 201401006,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "7C",
+   "CNO": 4,
+   "CName": "蔡雅芯",
+   "EName": "CHOI Nga Sum",
+   "studentId": 202206010,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "7C",
+   "CNO": 24,
+   "CName": "侯文德",
+   "EName": "HAU Man Tak Ethan",
+   "studentId": 201701047,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "7C",
+   "CNO": 30,
+   "CName": "隋子軒",
+   "EName": "SUI Tsz Hin",
+   "studentId": 201701087,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "10B",
+   "CNO": 30,
+   "CName": "邱浩哲",
+   "EName": "YAU Ho Chit",
+   "studentId": 201401123,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "7C",
+   "CNO": 18,
+   "CName": "余欣澄",
+   "EName": "YU Yan Ching",
+   "studentId": 202206016,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "10B",
+   "CNO": 14,
+   "CName": "繆雲涵",
+   "EName": "MIAO Yunhan Ivy",
+   "studentId": 201906004,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "11M",
+   "CNO": 24,
+   "CName": "羅碧城",
+   "EName": "LUO Bicheng",
+   "studentId": 201907009,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "7C",
+   "CNO": 4,
+   "CName": "蔡雅芯",
+   "EName": "CHOI Nga Sum",
+   "studentId": 202206010,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "7C",
+   "CNO": 13,
+   "CName": "林禕晨",
+   "EName": "LIN Yichen",
+   "studentId": 202307008,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "10B",
+   "CNO": 14,
+   "CName": "繆雲涵",
+   "EName": "MIAO Yunhan Ivy",
+   "studentId": 201906004,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "7C",
+   "CNO": 18,
+   "CName": "余欣澄",
+   "EName": "YU Yan Ching",
+   "studentId": 202206016,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "7C",
+   "CNO": 1,
+   "CName": "區巧賢",
+   "EName": "AU Hau Yin",
+   "studentId": 201701133,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "7C",
+   "CNO": 30,
+   "CName": "隋子軒",
+   "EName": "SUI Tsz Hin",
+   "studentId": 201701087,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "12B",
+   "CNO": 13,
+   "CName": "陳湛琳",
+   "EName": "CHAN Cham Lam",
+   "studentId": 201201065,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "10B",
+   "CNO": 30,
+   "CName": "邱浩哲",
+   "EName": "YAU Ho Chit",
+   "studentId": 201401123,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "9W",
+   "CNO": 11,
+   "CName": "呂盼蔚",
+   "EName": "LUI Pan Wai",
+   "studentId": 202107011,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "11M",
+   "CNO": 24,
+   "CName": "羅碧城",
+   "EName": "LUO Bicheng",
+   "studentId": 201907009,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "10B",
+   "CNO": 34,
+   "CName": "蔡希愉",
+   "EName": "CHUA Hei Yu",
+   "studentId": 201401012,
+   "Points": 10,
+   "Committee": true
+ },
+ {
+   "Class": "12B",
+   "CNO": 24,
+   "CName": "門睿涵",
+   "EName": "MEN Ruihan",
+   "studentId": 201807023,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "10B",
+   "CNO": 19,
+   "CName": "張家銘",
+   "EName": "CHEUNG Ka Ming",
+   "studentId": 201401006,
+   "Points": 10,
+   "Committee": false
+ },
+ {
+   "Class": "7C",
+   "CNO": 4,
+   "CName": "蔡雅芯",
+   "EName": "CHOI Nga Sum",
+   "studentId": 202206010,
+   "Points": 10,
+   "Committee": false
+ }
+]
