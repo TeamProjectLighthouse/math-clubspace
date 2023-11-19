@@ -43,7 +43,8 @@ const userSignOut = async() => {
 
 onAuthStateChanged(auth, (user) => {
     if(user) {
-        alert("You have signed in!")
+        // alert("You have signed in!")
+        window.location.href = "/leaderboard.html"
     } else {
         // Signed out
     }

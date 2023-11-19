@@ -2,6 +2,12 @@ html,body {
     height: 100%;
 }
 
+body {
+    background-image: url('./assets/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .center{
     width: 100%;
     height: 100%;
@@ -26,21 +32,23 @@ html,body {
     width: 593px;
     height: 593px;
     border-radius: 50%;
-    box-shadow: 0 4px 40px 28px #22668D15;
+    background-color: white;
+    box-shadow: 0 4px 40px 10px #22668d4a;
+    z-index: -1;
 }
 
 .greetings {
     font-family: 'Work Sans', sans-serif;
     font-size: 36px;
     margin: 0;
-    color: #22668D
+    color: #22668D;
 }
 
 .title {
     font-family: 'Adamina', serif;
     font-size: 88px;
     margin: 0;
-    color: #2A2B2E
+    color: #2A2B2E;
 }
 
 .studentid-input {
