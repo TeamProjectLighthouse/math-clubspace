@@ -1,0 +1,72 @@
+html,body {
+    height: 100%;
+}
+
+body {
+    background-image: url('./assets/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.points-div {
+    display: flex;
+    height: 100%;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    
+}
+.circle {
+    display: flex;
+    flex-direction: column;
+    background-color: #FBFEFF;
+    border-radius: 50%;
+    width: 80%;
+    aspect-ratio: 1/1;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 40px 10px #22668d4a;
+    z-index: -1;
+}
+
+.name {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 4vw;
+    letter-spacing: 6px;
+    margin: 0;
+    color: #22668D;
+}
+
+.points {
+    font-family: 'Adamina', serif;
+    font-size: 6vw;
+    letter-spacing: 8px;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    color: #2A2B2E;
+    text-align: center;
+}
+
+.reminder {
+    font-family: 'Adamina', serif;
+    font-size: 1.5vw;
+
+    margin: 0;
+    color: #5E6062;
+}
+
+.leaderboard-div {
+    flex: 1;
+}
