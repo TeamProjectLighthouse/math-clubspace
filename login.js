@@ -21,19 +21,24 @@ const provider = new GoogleAuthProvider();
 const signInButton = document.querySelector('.sign-in-button-js');
 const signOutButton = document.querySelector('.sign-out-button-js');
 
+let userName, userEmail;
+
 const userSignIn = async() => {
     signInWithPopup(auth, provider)
     .then((result) => {
         const user = result.user;
 
-        const userName = user.displayName;
-        const userEmail = user.email;
-        console.log(user);
+        userName = user.displayName;
+        userEmail = user.email;
+        // window.location.href = "/leaderboard.html"
     }).catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
     })
 }
+
+console.log(userName, userEmail)
+export { userName, userEmail };
 
 const userSignOut = async() => {
     signOut(auth).then(() => {
@@ -44,14 +49,15 @@ const userSignOut = async() => {
 onAuthStateChanged(auth, (user) => {
     if(user) {
         // alert("You have signed in!")
-        window.location.href = "/leaderboard.html"
     } else {
         // Signed out
     }
 })
 
-signInButton.addEventListener('click', userSignIn);
-signOutButton.addEventListener('click', userSignOut);
+if (signInButton != null) {
+    signInButton.addEventListener('click', userSignIn);
+}
+// signOutButton.addEventListener('click', userSignOut);
 
 
 
