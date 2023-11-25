@@ -15,59 +15,58 @@ const analytics = getAnalytics(app);
 const auth = getAuth();
 const provider = new GoogleAuthProvider();
 
-
-
 // Sign in and sign out
 const signInButton = document.querySelector('.sign-in-button-js');
 const signOutButton = document.querySelector('.sign-out-button-js');
 
-let userName, userEmail;
+const userSignIn = () => {
+    return new Promise((resolve, reject) => {
+        signInWithPopup(auth, provider)
+            .then((result) => {
+                const user = result.user;
 
-const userSignIn = async() => {
-    signInWithPopup(auth, provider)
-    .then((result) => {
-        const user = result.user;
+                const userName = user.displayName;
+                const userEmail = user.email;
 
-        userName = user.displayName;
-        userEmail = user.email;
-        // window.location.href = "/leaderboard.html"
-    }).catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-    })
-}
+                localStorage.setItem('userName', userName);
+                localStorage.setItem('userEmail', userEmail);
+                window.location.href = "/leaderboard.html";
+            }).catch((error) => {
+                reject(error);
+            });
+    });
+};
 
-console.log(userName, userEmail)
-export { userName, userEmail };
-
-const userSignOut = async() => {
+const userSignOut = async () => {
     signOut(auth).then(() => {
-        alert("You have signed out successfully!")
-    }).catch((error) => {})
-}
+        alert("You have signed out successfully!");
+    }).catch((error) => {});
+};
 
 onAuthStateChanged(auth, (user) => {
-    if(user) {
+    if (user) {
         // alert("You have signed in!")
     } else {
         // Signed out
     }
-})
+});
 
 if (signInButton != null) {
-    signInButton.addEventListener('click', userSignIn);
+    signInButton.addEventListener('click', () => {
+        userSignIn()
+            .catch((error) => {
+                console.log('Error signing in:', error);
+            });
+    });
 }
-// signOutButton.addEventListener('click', userSignOut);
 
-
-
-// Adding JSON data into firestore
+// Adding JSON data into Firestore
 
 const db = getFirestore();
 
 async function fetchFirestoreData() {
     let dataJSON;
-     await fetch('./firebase/data.json')
+    await fetch('./firebase/data.json')
         .then(response => response.json())
         .then(json => {
             dataJSON = json;
@@ -77,32 +76,36 @@ async function fetchFirestoreData() {
 
 async function setFirestore() {
     const students = await fetchFirestoreData();
-        
+
     for (const i in students) {
         const student = students[i];
         const docRef = doc(db, 'studentId', student.studentId.toString());
 
         await setDoc(docRef, {
-            class: student.Class,
-            cno: student.CNO,
-            cname: student.CName,
-            ename: student.EName,
-            committee: student.Committee
-        }, { merge: true }).then(() => {
-            console.log("Document has been added successfully");
-        })
-        .catch((error) => {
-            console.log(error);
-        })
+                class: student.Class,
+                cno: student.CNO,
+                cname: student.CName,
+                ename: student.EName,
+                committee: student.Committee
+            }, {
+                merge: true
+            })
+            .then(() => {
+                console.log("Document has been added successfully");
+            })
+            .catch((error) => {
+                console.log(error);
+            });
 
         await updateDoc(docRef, {
-            points: increment(parseInt(student.Points))
-        }).then(() => {
-            console.log("Points have been updated successfully");
-        })
-        .catch((error) => {
-            console.log(error);
-        })
+                points: increment(parseInt(student.Points))
+            })
+            .then(() => {
+                console.log("Points have been updated successfully");
+            })
+            .catch((error) => {
+                console.log(error);
+            });
     }
 }
 
@@ -113,7 +116,7 @@ async function deleteData() {
         const student = students[i];
         const docRef = doc(db, 'studentId', student.studentId.toString());
         deleteDoc(docRef).then(() => {
-            console.log("Deleted successfully.")
+            console.log("Deleted successfully.");
         });
     }
 }
