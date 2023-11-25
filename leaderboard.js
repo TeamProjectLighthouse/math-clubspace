@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
-import { getFirestore, doc, getDoc } from 'https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js';
+import { getFirestore, doc, getDoc, collection, query, where, getDocs } from 'https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js';
 import firebaseConfig from "./firebase-config.js";
 
 const app = initializeApp(firebaseConfig);
@@ -29,4 +29,33 @@ if (docSnap.exists()) {
 document.querySelector('.name-js').innerHTML = userData.ename;
 document.querySelector('.points-js').innerHTML = userData.points;
 
-console.log(userData);
+let leaderboard = [];
+const q = query(collection(db, 'studentId'), where('committee', '==', false));
+
+const querySnapshot = await getDocs(q);
+querySnapshot.forEach((doc) => {
+    leaderboard.push(doc.data());
+})
+leaderboard = leaderboard.sort((a,b) => b.points-a.points);
+console.log(leaderboard)
+let yourRank;
+if (leaderboard.findIndex(x=> x.ename === userData.ename) == '-1') {
+    yourRank = leaderboard.length;
+} else {
+    yourRank = leaderboard.findIndex(x=> x.ename === userData.ename);
+}
+
+
+document.querySelector('.rank-js').innerHTML = yourRank;
+
+let counter1 = 0;
+document.querySelectorAll('.info-name').forEach((name) => {
+    name.innerHTML = leaderboard[counter1].ename;
+    counter1 ++;
+})
+
+let counter2 = 0;
+document.querySelectorAll('.info-points').forEach((points) => {
+    points.innerHTML = leaderboard[counter2].points;
+    counter2 ++;
+})

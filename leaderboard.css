@@ -166,7 +166,7 @@ body {
     .info-points {
         position: absolute;
         display: inline;
-        right: 8%;
+        right: 5%;
         font-family: 'Adamina', serif;
         font-size: 1.5vw;
         color: #22668D;
@@ -208,7 +208,7 @@ body {
     .info-points {
         position: absolute;
         display: inline;
-        right: 8%;
+        right: 5%;
         font-family: 'Adamina', serif;
         font-size: 26px;
         color: #22668D;
