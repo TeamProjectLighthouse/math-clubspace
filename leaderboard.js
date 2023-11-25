@@ -18,11 +18,21 @@ let userData;
 if (docSnap.exists()) {
     userData = docSnap.data();
 } else {
-    userData = {
-        ename: userFullName.substring(index + 1),
-        class: userFullName.substring(0, index).split(' ')[0],
-        cno: userFullName.substring(0, index).split(' ')[1],
-        points: 0
+    let regex = /^[a-zA-Z]+$/; 
+    if (regex.test(userFullName)) {
+        userData = {
+            ename: userFullName,
+            class: userFullName.substring(0, index).split(' ')[0],
+            cno: userFullName.substring(0, index).split(' ')[1],
+            points: 0
+        }
+    } else {
+        userData = {
+            ename: userFullName.substring(index + 1),
+            class: userFullName.substring(0, index).split(' ')[0],
+            cno: userFullName.substring(0, index).split(' ')[1],
+            points: 0
+        }
     }
 }
 
